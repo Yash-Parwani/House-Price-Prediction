@@ -155,7 +155,7 @@ Using the linearRegression we got only 87 % accuracy.
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/linear.jpeg)<br>
 
 
-KNN
+KNN<br>
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/knn.jpeg)<br>
 
 
