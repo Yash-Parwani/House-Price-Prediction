@@ -60,7 +60,7 @@ elevator: have ( 1 ) or not have elevator( 0 )<br>
 fiveYearsProperty: if the owner have the property for less than 5 years.<br>
 
 G. Generic Flow Of Project
-
+![](https://github.com/Yash-Parwani/House-Price-Prediction/tree/main/new/18.png)
 
 H. EDA
 
