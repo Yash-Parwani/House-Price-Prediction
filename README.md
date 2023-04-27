@@ -157,14 +157,16 @@ Using the linearRegression we got only 87 % accuracy.
 
 
 
-KNN
+### KNN
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/knn.jpeg)<br>
 
 
-Decision Tree
+### Decision Tree
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/decision.jpeg)<br>
 
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/random forest.jpeg)<br
+
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/random forest.jpeg)<br>
+
 Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a  Best Algorithm for this problem.
 
 
