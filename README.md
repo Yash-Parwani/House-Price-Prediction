@@ -24,14 +24,14 @@ b.Jupyter Notebook
 c. Google Colab
 d. GitHub
 
-Libraries
+E. Libraries
 
 a.Pandas
 b.Scikit Learn
 c.Numpy
 d.Matpoltlib
 
-2. Data Collection
+F. Data Collection
 
 https://www.kaggle.com/datasets/ruiqurm/lianjia    (Dataset used to build model)
 
@@ -59,15 +59,14 @@ ladderRatio: the proportion between number of residents on the same floor and nu
 elevator: have ( 1 ) or not have elevator( 0 )<br>
 fiveYearsProperty: if the owner have the property for less than 5 years.<br>
 
-3. Generic Flow Of Project
+G. Generic Flow Of Project
+
+
+H. EDA
 
 
 
-4. EDA
-
-
-
-E.Data Cleaning
+I.Data Cleaning
 
 we have 26 columns ,from these we don't want some column(i.e. url,id,cid) then we will perform data cleaning wich involve following steps. our target variable is totalPrice
 a. Impute/Remove missing values or Null values (NaN)
@@ -112,7 +111,8 @@ a. most of the expensive houses have HardCover as a renovation condition
 Summary of lineplot
 a. Most of the peoples average are lies in 12500-150000 ...
 
-F. Feature Engineering
+
+J. Feature Engineering
 
 we found outlier in our data ..
 
@@ -135,7 +135,7 @@ i. elevator
 j. constructionTime
 k. Followers
 
-G. Data Normalization
+K. Data Normalization
 
 Normalization (min-max Normalization)
 In this approach we scale down the feature in between 0 to 1
@@ -143,7 +143,7 @@ In this approach we scale down the feature in between 0 to 1
 we have numerical column where we can apply min-max Normalization.
 
 
-5. Choosing Best ML Model
+L. Choosing Best ML Model
 
 List of the model that we can use for our problem
 a. LinearRegression model
@@ -157,7 +157,7 @@ Using the linearRegression we got only 75 % accuracy.
 
 Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a Best Algorithm for this problem.
 
-6. Model Creation
+M. Model Creation
 
 So,using a RandomForest we got good accuracy , we can Hyperparameter tuning for best accuracy.
 
