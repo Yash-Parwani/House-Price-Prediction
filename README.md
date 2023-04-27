@@ -21,22 +21,19 @@ Tools
 
 a.Python
 b.Jupyter Notebook
-c. Flask
-d. HTML
-e. CSS
-f. JS
-g. Heroku
-h. GitHub
+c. Google Colab
+d. GitHub
 
 Libraries
 
 a.Pandas
 b.Scikit Learn
 c.Numpy
-d.Seaborn
-e.Matpoltlib
+d.Matpoltlib
 
 2. Data Collection
+
+https://www.kaggle.com/datasets/ruiqurm/lianjia    (Dataset used to build model)
 
 For this project we used the data that is available on kaggle.(click here for data).There are 26 columns and 318851 Rows. These are the major point about the data set.
 url: the url which fetches the data
