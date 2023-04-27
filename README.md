@@ -137,14 +137,14 @@ i. elevator<br>
 j. constructionTime<br>
 k. Followers
 
-#### C. Data Normalization
+C. Data Normalization
 Normalization (min-max Normalization)<br>
 In this approach we scale down the feature in between 0 to 1
 
 we have numerical column where we can apply min-max Normalization.<br>
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/13.png)
 
-### 5. Choosing Best ML Model
+5. Choosing Best ML Model
 List of the model that we can use for our problem<br>
 a. LinearRegression model<br>
 b. KNN Model<br>
@@ -157,20 +157,20 @@ Using the linearRegression we got only 87 % accuracy.
 
 
 
-### KNN
+KNN
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/knn.jpeg)<br>
 
 
-### Decision Tree
+Decision Tree
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/decision.jpeg)<br>
 
-### Random Forest
+Random Forest
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/random.jpeg)<br>
 
 Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a  Best Algorithm for this problem.
 
 
-### 6. Model Creation
+6. Model Creation
 So,using a RandomForest we got good accuracy , we can Hyperparameter tuning  for best accuracy.
 
 Algorithm that can be used for Hyperparameter tuning are :-
@@ -181,16 +181,5 @@ c. Bayesian Optimization-Automate Hyperparameter Tuning (Hyperopt)<br>
 d. Sequential model based optimization<br>
 e. Optuna-Automate Hyperparameter Tuning<br>
 f. Genetic Algorithm<br>
-
-Main parameters used by RandomForest Algorithm are :-
-
-a. n_estimators --->    The number of trees in the forest.<br>
-b. criterion--->{"mse", "mae"}-->The function to measure the quality of a split<br>
-c. max_features--->{"auto", "sqrt", "log2"}-->    The number of features to consider when looking for the best split:
-
-
-So, After Hyperparameter Tuning we got 90 % accuracy on test data and 94 % accuracy on train data. 
-![](https://github.com/bibek376/Housing_Price_Prediction/blob/master/Picture_For_README/16.png)<br>
-Now,Accuracy of model seems to be very good .so we can save the model using pickle. 
 
 
