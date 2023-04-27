@@ -72,7 +72,7 @@ a. Impute/Remove missing values or Null values (NaN)<br>
 b. Remove unnecessary and corrupted data.<br>
 c. Date/Text parsing if required.
 
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/3.png)<br>
+
 DOM Column have more than 50% value are missing it's better to delete that column
 
 
