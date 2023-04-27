@@ -67,7 +67,7 @@ fiveYearsProperty: if the owner have the property for less than 5 years.<br>
 
 
 
-A.Data Cleaning
+E.Data Cleaning
 
 we have 26 columns ,from these we don't want some column(i.e. url,id,cid) then we will perform data cleaning wich involve following steps. our target variable is totalPrice
 a. Impute/Remove missing values or Null values (NaN)
@@ -112,7 +112,7 @@ a. most of the expensive houses have HardCover as a renovation condition
 Summary of lineplot
 a. Most of the peoples average are lies in 12500-150000 ...
 
-B. Feature Engineering
+F. Feature Engineering
 
 we found outlier in our data ..
 
@@ -135,7 +135,7 @@ i. elevator
 j. constructionTime
 k. Followers
 
-C. Data Normalization
+G. Data Normalization
 
 Normalization (min-max Normalization)
 In this approach we scale down the feature in between 0 to 1
