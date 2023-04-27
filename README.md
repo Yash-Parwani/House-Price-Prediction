@@ -72,9 +72,6 @@ a. Impute/Remove missing values or Null values (NaN)<br>
 b. Remove unnecessary and corrupted data.<br>
 c. Date/Text parsing if required.
 
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/2.png)<br>
-we handle NAN value using appropriate solutions.
-
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/3.png)<br>
 DOM Column have more than 50% value are missing it's better to delete that column
 
@@ -82,49 +79,7 @@ DOM Column have more than 50% value are missing it's better to delete that colum
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/4.png)<br>
 some column have unique character. we solve these problem using split method and create seprate column for unique character.<br>
 
-We also have a categorical data we handle such kind of data using dummies variable concept. following are the columns which have categorical data.<br>
-a. renovationCondition<br>
-b. buildingStructure<br>
-c. buildingType<br>
-d. district<br>
-e. elevator<br>
-f. floor_type
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/5.png)<br>
-Summary of the Heat-Map<br>
-a. totalPrice is highly corellated with community average,square,bathroom,livingroom and Trde Time.<br>
-b. totalprice is highly negative corellated with ladderRatio,lat and lng.
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/6.png)<br>
-Summary of the Density Plot<br>
-a. most of the output features is lies between 0-2500
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/7.png)<br>
-Summary of Scatterplot<br>
-a. Most of the House Followers 0-400.
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/8.png)<br>
-Summery of Scatterplot with respect to renovationCondition<br>
-a. most of the expensive houses have HardCover as a renovation condition
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/9.png)<br>
-Summary of lineplot<br>
-a. Most of the peoples average are lies in 12500-150000 ...
-
-#### B. Feature Engineering
-we found outlier in our data ..
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/10.png)<br>
-from the above figure we can notice that we have an outlier present in our dataset.<br>
-for outlier we can use IQR method and after using IQR method.Now, our data looks fine.
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/11.png)
-
-
-
-using the feature engineering we got out top 30 features with respect to totalPrice .
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/12.png)
-
-So,these are the top 20 features for our model<br>
+So,these are the top features for our model<br>
 a. tradeTime<br>
 b. CommunityAverage<br>
 c. square<br>
@@ -137,12 +92,6 @@ i. elevator<br>
 j. constructionTime<br>
 k. Followers
 
-C. Data Normalization
-Normalization (min-max Normalization)<br>
-In this approach we scale down the feature in between 0 to 1
-
-we have numerical column where we can apply min-max Normalization.<br>
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/13.png)
 
 5. Choosing Best ML Model
 List of the model that we can use for our problem<br>
