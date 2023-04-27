@@ -66,96 +66,124 @@ fiveYearsProperty: if the owner have the property for less than 5 years.<br>
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/1.png)
 
 
-I.Data Cleaning
-
-we have 26 columns ,from these we don't want some column(i.e. url,id,cid) then we will perform data cleaning wich involve following steps. our target variable is totalPrice
-a. Impute/Remove missing values or Null values (NaN)
-b. Remove unnecessary and corrupted data.
+#### A.Data Cleaning
+we have 26 columns ,from these we don't want some column(i.e. url,id,cid) then we will perform data cleaning wich involve following steps. our target variable is totalPrice<br>
+a. Impute/Remove missing values or Null values (NaN)<br>
+b. Remove unnecessary and corrupted data.<br>
 c. Date/Text parsing if required.
 
-
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/2.png)<br>
 we handle NAN value using appropriate solutions.
 
-
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/3.png)<br>
 DOM Column have more than 50% value are missing it's better to delete that column
 
 
-some column have unique character. we solve these problem using split method and create seprate column for unique character.
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/4.png)<br>
+some column have unique character. we solve these problem using split method and create seprate column for unique character.<br>
 
-We also have a categorical data we handle such kind of data using dummies variable concept. following are the columns which have categorical data.
-a. renovationCondition
-b. buildingStructure
-c. buildingType
-d. district
-e. elevator
+We also have a categorical data we handle such kind of data using dummies variable concept. following are the columns which have categorical data.<br>
+a. renovationCondition<br>
+b. buildingStructure<br>
+c. buildingType<br>
+d. district<br>
+e. elevator<br>
 f. floor_type
 
-
-Summary of the Heat-Map
-a. totalPrice is highly corellated with community average,square,bathroom,livingroom and Trde Time.
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/5.png)<br>
+Summary of the Heat-Map<br>
+a. totalPrice is highly corellated with community average,square,bathroom,livingroom and Trde Time.<br>
 b. totalprice is highly negative corellated with ladderRatio,lat and lng.
 
-
-Summary of the Density Plot
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/6.png)<br>
+Summary of the Density Plot<br>
 a. most of the output features is lies between 0-2500
 
-
-Summary of Scatterplot
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/7.png)<br>
+Summary of Scatterplot<br>
 a. Most of the House Followers 0-400.
 
-
-Summery of Scatterplot with respect to renovationCondition
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/8.png)<br>
+Summery of Scatterplot with respect to renovationCondition<br>
 a. most of the expensive houses have HardCover as a renovation condition
 
-
-Summary of lineplot
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/9.png)<br>
+Summary of lineplot<br>
 a. Most of the peoples average are lies in 12500-150000 ...
 
-
-J. Feature Engineering
-
+#### B. Feature Engineering
 we found outlier in our data ..
 
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/10.png)<br>
+from the above figure we can notice that we have an outlier present in our dataset.<br>
+for outlier we can use IQR method and after using IQR method.Now, our data looks fine.
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/11.png)
 
-from the above figure we can notice that we have an outlier present in our dataset.
-for outlier we can use IQR method and after using IQR method.Now, our data looks fine. 
 
-using the feature engineering we got out top 30 features with respect to totalPrice . 
 
-So,these are the top 20 features for our model
-a. tradeTime
-b. CommunityAverage
-c. square
-d. livingRoom
-e. bathRoom
-f. drawingRoom
-g. renovationCondition
-h. buildingStructure
-i. elevator
-j. constructionTime
+using the feature engineering we got out top 30 features with respect to totalPrice .
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/12.png)
+
+So,these are the top 20 features for our model<br>
+a. tradeTime<br>
+b. CommunityAverage<br>
+c. square<br>
+d. livingRoom<br>
+e. bathRoom<br>
+f. drawingRoom<br>
+g. renovationCondition<br>
+h. buildingStructure<br>
+i. elevator<br>
+j. constructionTime<br>
 k. Followers
 
-K. Data Normalization
-
-Normalization (min-max Normalization)
+#### C. Data Normalization
+Normalization (min-max Normalization)<br>
 In this approach we scale down the feature in between 0 to 1
 
-we have numerical column where we can apply min-max Normalization.
+we have numerical column where we can apply min-max Normalization.<br>
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/13.png)
 
-
-L. Choosing Best ML Model
-
-List of the model that we can use for our problem
-a. LinearRegression model
-b. KNN Model
-c. Decesion Tree
+### 5. Choosing Best ML Model
+List of the model that we can use for our problem<br>
+a. LinearRegression model<br>
+b. KNN Model<br>
+c. Decesion Tree<br>
 d. Random Forest
 
 
+![](https://github.com/bibek376/Housing_Price_Prediction/blob/master/Picture_For_README/14.png)<br>
 Using the linearRegression we got only 75 % accuracy.
 
+![](https://github.com/bibek376/Housing_Price_Prediction/blob/master/Picture_For_README/15.png)<br>
+Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a  Best Algorithm for this problem.
 
-Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a Best Algorithm for this problem.
+
+### 6. Model Creation
+So,using a RandomForest we got good accuracy , we can Hyperparameter tuning  for best accuracy.
+
+Algorithm that can be used for Hyperparameter tuning are :-
+
+a. GridSearchCV<br>
+b. RandomizedSearchCV<br>
+c. Bayesian Optimization-Automate Hyperparameter Tuning (Hyperopt)<br>
+d. Sequential model based optimization<br>
+e. Optuna-Automate Hyperparameter Tuning<br>
+f. Genetic Algorithm<br>
+
+Main parameters used by RandomForest Algorithm are :-
+
+a. n_estimators --->    The number of trees in the forest.<br>
+b. criterion--->{"mse", "mae"}-->The function to measure the quality of a split<br>
+c. max_features--->{"auto", "sqrt", "log2"}-->    The number of features to consider when looking for the best split:
+
+
+So, After Hyperparameter Tuning we got 90 % accuracy on test data and 94 % accuracy on train data. 
+![](https://github.com/bibek376/Housing_Price_Prediction/blob/master/Picture_For_README/16.png)<br>
+Now,Accuracy of model seems to be very good .so we can save the model using pickle. 
+
+
+
 
 M. Model Creation
 
