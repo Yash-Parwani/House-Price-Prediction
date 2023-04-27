@@ -1,37 +1,37 @@
 # House-Price-Prediction
 
-A. Problem Statement
+###A. Problem Statement
 
 Thousands of houses are sold everyday. There are some questions every buyer asks himself. What is the actual price of this house? Am I paying a fair price? Till when can I get returns on my investment? What will be the price of my house after 5 years?
 
 
-B. Best Possible Solutions
+###B. Best Possible Solutions
 
 a.Housing Expert
 b.Intuition About House
 c.Using Machine Learning
 
-C. Introduction About Project
+###C. Introduction About Project
 
 House Price prediction are very stressful work as we have to consider different things while buying a house like the structure and the rooms kitchen parking space and gardens. People don’t know about the factor which influence the house price. But by using the Machine learning we can easily find the house which is to be prefect for us and helps to predict the price accurately.
 
-D. Tools and Libraries
+###D. Tools and Libraries
 
-Tools
+###Tools
 
 a.Python
 b.Jupyter Notebook
 c. Google Colab
 d. GitHub
 
-E. Libraries
+###E. Libraries
 
 a.Pandas
 b.Scikit Learn
 c.Numpy
 d.Matpoltlib
 
-F. Data Collection
+###F. Data Collection
 
 https://www.kaggle.com/datasets/ruiqurm/lianjia    (Dataset used to build model)
 
@@ -59,7 +59,7 @@ ladderRatio: the proportion between number of residents on the same floor and nu
 elevator: have ( 1 ) or not have elevator( 0 )<br>
 fiveYearsProperty: if the owner have the property for less than 5 years.<br>
 
-G. Generic Flow Of Project
+### G. Generic Flow Of Project
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/18.png)
 
 H. EDA
