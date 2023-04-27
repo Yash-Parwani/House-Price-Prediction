@@ -194,26 +194,3 @@ So, After Hyperparameter Tuning we got 90 % accuracy on test data and 94 % accur
 Now,Accuracy of model seems to be very good .so we can save the model using pickle. 
 
 
-
-
-M. Model Creation
-
-So,using a RandomForest we got good accuracy , we can Hyperparameter tuning for best accuracy.
-
-Algorithm that can be used for Hyperparameter tuning are :-
-
-a. GridSearchCV
-b. RandomizedSearchCV
-c. Bayesian Optimization-Automate Hyperparameter Tuning (Hyperopt)
-d. Sequential model based optimization
-e. Optuna-Automate Hyperparameter Tuning
-f. Genetic Algorithm
-
-Main parameters used by RandomForest Algorithm are :-
-
-a. n_estimators ---> The number of trees in the forest.
-b. criterion--->{"mse", "mae"}-->The function to measure the quality of a split
-c. max_features--->{"auto", "sqrt", "log2"}--> The number of features to consider when looking for the best split:
-
-So, After Hyperparameter Tuning we got 90 % accuracy on test data and 94 % accuracy on train data. 
-Now,Accuracy of model seems to be very good .so we can save the model using pickle.
