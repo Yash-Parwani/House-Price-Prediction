@@ -151,10 +151,8 @@ b. KNN Model<br>
 c. Decesion Tree<br>
 d. Random Forest
 
-
-![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/linear.jpeg)<br>
 Using the linearRegression we got only 87 % accuracy.
-
+![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/linear.jpeg)<br>
 
 
 KNN
@@ -167,7 +165,7 @@ Decision Tree
 Random Forest
 ![](https://github.com/Yash-Parwani/House-Price-Prediction/blob/main/new/random.jpeg)<br>
 
-Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a  Best Algorithm for this problem.
+<b>Using the Random Forest we got 98 % accuracy on train data and 89 % on test data .so,we can consider RandomForest as a  Best Algorithm for this problem.<b>
 
 
 6. Model Creation
